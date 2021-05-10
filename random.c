@@ -10,7 +10,7 @@ void main() {
   int REPETITION;
   double r,r1,r2;
   printf("Input number of repetition\n");
-  scanf("%d", REPETITION);
+  scanf("%d", &REPETITION);
 
   outputfile = fopen("output.txt", "w");
   if (outputfile == NULL) {
