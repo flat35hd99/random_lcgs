@@ -7,7 +7,10 @@ void main() {
   printf("start");
   FILE *outputfile;
   int IX = 60001;
+  int REPETITION;
   double r,r1,r2;
+  printf("Input number of repetition\n");
+  scanf("%d", REPETITION);
 
   outputfile = fopen("output.txt", "w");
   if (outputfile == NULL) {
@@ -17,7 +20,7 @@ void main() {
   unsigned int count;
   double sum, sum_r_2, ave, var;
   
-  for (count = 0; count <= 1000000; count = count + 1) {
+  for (count = 0; count <= REPETITION; count = count + 1) {
     r = myRandom(&IX);
     fprintf(outputfile, "%30lf\n", r);
   }
