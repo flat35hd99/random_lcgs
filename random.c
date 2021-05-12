@@ -21,7 +21,7 @@ void main() {
   unsigned int count;
   double sum, sum_r_2, ave, var;
   
-  for (count = 0; count <= REPETITION; count = count + 1) {
+  for (count = 0; count < REPETITION; count = count + 1) {
     r = myRandom(&IX);
     fprintf(outputfile, "%30lf\n", r);
   }
