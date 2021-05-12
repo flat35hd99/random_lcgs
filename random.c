@@ -11,6 +11,7 @@ void main() {
   double r,r1,r2;
   printf("Input number of repetition\n");
   scanf("%d", &REPETITION);
+  printf("Input number is = %d", REPETITION);
 
   outputfile = fopen("output.txt", "w");
   if (outputfile == NULL) {
